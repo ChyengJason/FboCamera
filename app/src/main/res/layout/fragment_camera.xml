@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:camera_progress_button="http://schemas.android.com/apk/res-auto">
+
+    <com.jscheng.scamera.widget.CameraGLSurfaceView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jscheng.scamera.widget.CameraProgressButton
+        android:id="@+id/progress_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        camera_progress_button:circle="@color/colorAccent"
+        camera_progress_button:circle_line="@color/colorPrimary" />
+
+    <com.jscheng.scamera.widget.CameraSwitchView
+        android:id="@+id/switch_view"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:padding="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/camera_switch"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextureView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextureView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextureView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextureView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <com.jscheng.scamera.widget.CameraFocusView
+        android:id="@+id/focus_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+</RelativeLayout>

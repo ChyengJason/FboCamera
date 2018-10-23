@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="camera_progress_button">
+        <attr name="circle_line" format="color"></attr>
+        <attr name="circle" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="camera_focus_view">
+        <attr name="prepare_color" format="color"></attr>
+        <attr name="finish_color" format="color"></attr>
+        <attr name="stroke_width" format="integer"></attr>
+    </declare-styleable>
+</resources>
